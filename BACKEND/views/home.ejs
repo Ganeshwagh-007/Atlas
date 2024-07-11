@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<div class="jumbotron centerhome">
+  <div class="container2">
+    <i class="fas fa-circle-user icon"></i>
+    <h1 class="display-3">OZANCO</h1>
+    <p class="lead">Don't keep your secrets, share them anonymously!</p>
+    <hr>
+    <div class="box">
+    <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+    <a class="btn btn-dark btn-lg homelogin" href="/login" role="button">Login</a>
+  </div>
+
+  <p id="copyright"></p> 
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById('copyright').innerHTML = `Copyright &copy; ${year}. Atlas` ;
+  </script>
+    
+  </div> 
+</div>
+<%- include('partials/footer') %>
+
+

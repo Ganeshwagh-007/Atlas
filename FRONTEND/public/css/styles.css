@@ -1,0 +1,482 @@
+/* home page  */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: none; 
+  background-color: rgb(4, 13, 18);
+}
+
+
+.icon {
+  font-size: 6rem; 
+  height: 10px;
+  color: #333; 
+  animation: animateIcon 10s linear infinite, tiltIcon 7s ease-in-out infinite alternate; 
+  transform-origin: center;
+}
+
+@keyframes animateIcon {
+  0%, 15% {
+    color: rgb(97, 94, 252);
+  }
+  15%,30%{
+    color: rgb(3, 201, 136);
+  }
+  30%,45%{
+    color: rgb(250, 112, 112);
+  }
+  45%,60%{
+    color:rgb(255, 32, 78) ;
+  }
+  60%,75%{
+    color: rgb(146, 144, 195);
+  }
+  75%,90%{
+    color: rgb(255, 193, 0);
+  }
+  90%,100%{
+    color: rgb(27, 66, 66);
+  }
+
+}
+
+@keyframes tiltIcon {
+  0%, 100% {
+    transform: rotate(0deg); /* Initial and final position */
+  }
+  25% {
+    transform: rotate(-5deg) translateX(-5px); /* Tilt backward and move left */
+  }
+  50% {
+    transform: rotate(5deg) translateX(5px); /* Tilt forward and move right */
+  }
+  75% {
+    transform: rotate(-5deg) translateX(-5px); /* Tilt backward and move left */
+  }
+}
+
+
+
+.jumbotron {
+  background-color:rgb(4, 13, 18); 
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  text-align: center;
+  height: 100%;
+}
+
+.lead{
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+}
+
+.display-3 {
+  font-size: 5rem;
+  font-weight: 400;
+  background: linear-gradient(45deg, rgb(32, 22, 88), rgb(152, 171, 238));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.box a{
+  margin-left: 20px;
+  width: 100px;
+  margin-top:100px;  
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  padding: 4px;
+  font-size: 1 rem;
+}
+
+.btn-light:hover {
+  opacity: 0.8;
+  background-color: cadetblue;
+  border:2px solid  white;
+}
+
+.btn-dark:hover {
+  opacity: 0.8;
+  background-color: #04083f;
+}
+
+.homelogin{ 
+  border-color: transparent;
+}
+
+.homelogin:hover{
+  border: 2px solid white;
+}
+
+
+ /* login page and Register page */
+
+ .container1 {
+  background-color: rgb(4, 13, 18); 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.loginandregister{
+  text-align: center;
+  color: cadetblue
+
+}
+
+.card1 {
+  width: 100%; 
+  max-width: 500px; 
+  padding: 40px;
+  margin: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-weight: 500; 
+  color: cadetblue;
+}
+
+.form-control{
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color:white;
+  opacity: 0.8;
+}
+
+.form-control:hover{
+  background-color:rgb(240, 240, 240);  
+  opacity: 0.8;
+}
+
+.loginregbtn{
+  margin-top: 5px;
+  font-weight: 700;
+  background-color: cadetblue;
+  border-color: cadetblue;
+  color: white;
+}
+
+.loginregbtn:hover{
+  background-color: rgb(4, 13, 18);
+  border: 2px solid white;
+}
+
+.card-body2 a{ 
+  max-width: 500px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 7px;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: white;
+}
+
+.card-bodyreg a{
+  width: 100%;
+  max-width: 650px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 7px;
+  border: 2px solid white;
+  background-color: white;
+  padding: 8px;
+}
+
+.fab{
+  margin-right: 5px;
+}
+
+.btn-block:hover{
+  opacity: 0.8;
+  background-color: cadetblue;
+ 
+}
+
+.card2{
+  width: 200px;
+}
+
+
+/* Secrets page */
+
+.jumbotron2 {
+  background-color: rgb(4, 13, 18);
+  min-height: calc(100vh - 60px); /* Adjust based on your fixed header/footer if any */
+  overflow-y: auto; /* Enable scrolling within the jumbotron2 */
+  flex: 1;
+  position: relative;
+}
+
+.container3 {
+  flex: 0 0 auto;
+  padding: 40px;
+}
+
+.display-4 {
+  background: cadetblue;
+  font-weight: 500;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 400px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.svgg {
+
+  height: 20px;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+}
+
+.locksvg{
+  margin-right: 20px;
+  margin-bottom: 7px; 
+  width: 40px; 
+  height: 40px;
+ 
+}
+
+.text-center {
+  width: 100%;
+  position: relative;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.delete-secret {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.secrets-container {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 35px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-grow: 1; 
+  overflow-y: auto; 
+}
+
+.secret-box {
+  background: cadetblue;
+  border-radius: 7px;
+  /* box-shadow: 0 2px 5px #ccc; */
+  padding: 10px;
+  width: 225px;
+  height: 125px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  position: relative;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+
+.nosecrets{
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 10px;
+  width: 100%;
+  max-width: 200px; 
+  margin-top: 10px; 
+  background: none; 
+  position: absolute;
+  top: 20px; 
+  right: 20px;
+}
+
+.logout{
+font-weight: 500;
+border: 2px solid transparent; 
+transition: border-color 0.3s ease;
+}
+
+.logout:hover{
+  border-color: white;
+}
+
+.submited{
+  border-color: transparent;
+}
+
+.submited:hover{
+  border:2px solid white;
+}
+
+.btni {
+  margin: 7px;
+}
+.btni:hover {
+  text-decoration: none; 
+}
+
+/* Submit page */
+
+.container{
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron3 {
+  margin-top: 50px;
+  text-align: center;
+  height: 100vh;
+  width: 80%;
+  padding: 20px;
+}
+
+.key {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  color: cadetblue;
+  transition: color 0.5s ease; 
+  animation: animateColor 10s linear infinite;
+}
+
+@keyframes animateColor {
+  0%, 15% {
+    color: rgb(26, 77, 46); 
+  }
+  15%,30%{
+    color: rgb(119, 118, 179);
+  }
+  30%,45%{
+    color: rgb(226, 187, 233);
+  }
+  45%,60%{
+    color: rgb(255, 125, 41);
+  }
+  60%,75%{
+    color: rgb(238, 238, 238);
+  }
+  75%, 90% {
+    color: rgb(255, 211, 90); 
+  }
+  90%,100%{
+    color: rgb(155, 236, 0);
+  }
+}
+
+
+.secret-text{
+  margin-top: 45px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+
+.submiti{
+  font-weight: 500;
+  border-color: transparent;  
+  margin: 20px auto; 
+}
+
+.submiti:hover{
+  border: 2px solid white;
+}
+
+#copyright{
+  bottom: 0;
+  margin-top: 45px;
+  color: cadetblue;
+  font-size: 15px;
+}
+
+.copyr {
+  text-align: center;
+  padding: 10px 0;
+  background-color: none; 
+  padding: 15px;
+  color: cadetblue;
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
